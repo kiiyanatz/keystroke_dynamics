@@ -1,13 +1,11 @@
 from functools import partial
 
-from core import KeystrokeCaptureData
-from model import Fingerprint, FingerprintDatabase
-from sugar import create_fingerprint_from_capture_data
-# from flask import Flask, render_template, request
+from ksdyn.core import KeystrokeCaptureData
+from ksdyn.model import Fingerprint, FingerprintDatabase
+from ksdyn.sugar import create_fingerprint_from_capture_data
 
-# app = Flask(__name__)
 
-DATA_DIR = "/home/kiiya/Desktop/keystroke_dynamics/data/"
+DATA_DIR = "/home/kiiya/projects/keystroke_dynamics/data/"
 
 
 example_text1 = '''
@@ -53,17 +51,6 @@ def match_fingerprint():
     print "Best match: ", best.name
 
 
-# @app.route('/')
-# def index():
-#     title = 'Wifi Login'
-#     return render_template('index.html', title=title, example_text1=example_text1)
-
-
-# @app.route('/continue')
-# def continue_signup():
-#     title = 'Continue login'
-#     return render_template('continue.html', title=title, example_text1=example_text1)
-
 if __name__ == '__main__':
     print "Choose an option:\n  1) create new fingerprint\n  2) match text to a existing fingerprint"
     try:
@@ -78,4 +65,3 @@ if __name__ == '__main__':
         match_fingerprint()
     else:
         print "Bad option"
-    # app.run(debug=True)

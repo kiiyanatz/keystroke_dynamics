@@ -166,7 +166,7 @@ class DictTree(dict, Named):
         '''Given N DictTrees, returns N DictTrees, such that
         each outputed tree is a exact copy of the input, but only
         contains children whose names (keys) appear on *all* trees'''
-        recursive = absTrue
+        recursive = True
         common_names = reduce(set.intersection, [set(f.keys()) for f in trees])
 
         def get_childs(child_name):
