@@ -4,7 +4,6 @@ from ksdyn.model import Fingerprint
 
 
 def create_fingerprint_from_capture_data(name, capture_data):
-    print type(capture_data)
     assert isinstance(capture_data, KeystrokeCaptureData)
     fe = FeatureExtractor()
     capture_data.feed(fe)
