@@ -1,4 +1,4 @@
-from ksdyn.core import VersionedSerializableClass, GaussianDistribution, KeystrokeCaptureData, Named, DictTree, InsufficientData
+from core import VersionedSerializableClass, GaussianDistribution, KeystrokeCaptureData, Named, DictTree, InsufficientData
 from features import FeatureExtractor, CompositeFeature, FloatSeq
 
 import numpy as np

@@ -7,7 +7,7 @@ from sugar import create_fingerprint_from_capture_data
 
 # app = Flask(__name__)
 
-DATA_DIR = "/home/kiiya/Projects/python_projects/keystroke_dynamics/data/"
+DATA_DIR = "/home/kiiya/Desktop/keystroke_dynamics/data/"
 
 
 example_text1 = '''
@@ -39,7 +39,6 @@ def get_some_keystrokes():
 def create_fingerprint():
     username = raw_input("what's your name? ")
     data = get_some_keystrokes()
-    print type(data)
     data.save_to_file(DATA_DIR + username)
     fingerprint = create_fingerprint_from_capture_data(username, data)
     fingerprint.save_to_file(DATA_DIR + username)

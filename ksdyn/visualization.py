@@ -1,5 +1,5 @@
-from ksdyn.core import DictTree
-from ksdyn.model import GaussianAnomalyModel
+from core import DictTree
+from model import GaussianAnomalyModel
 
 import numpy as np
 import matplotlib

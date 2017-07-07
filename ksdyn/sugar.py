@@ -1,10 +1,10 @@
-from ksdyn.core import KeystrokeCaptureData
-from ksdyn.features import FeatureExtractor
-from ksdyn.model import Fingerprint
+from core import KeystrokeCaptureData
+from features import FeatureExtractor
+from model import Fingerprint
+
 
 
 def create_fingerprint_from_capture_data(name, capture_data):
-    print type(capture_data)
     assert isinstance(capture_data, KeystrokeCaptureData)
     fe = FeatureExtractor()
     capture_data.feed(fe)

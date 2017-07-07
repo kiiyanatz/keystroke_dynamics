@@ -1,2 +1,4 @@
 *.pyc
 /ksdyn.egg-info
+.idea
+env

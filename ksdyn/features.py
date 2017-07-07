@@ -1,4 +1,4 @@
-from ksdyn.core import KeypressEventReceiver, Named, DictTree
+from core import KeypressEventReceiver, Named, DictTree
 
 import numpy as np
 from abc import ABCMeta, abstractmethod
